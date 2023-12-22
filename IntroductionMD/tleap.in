@@ -1,0 +1,10 @@
+source /data/users/lipengfei/software/amber/amber22_tools23/amber22/dat/leap/cmd/leaprc.protein.ff14SB
+source /data/users/lipengfei/software/amber/amber22_tools23/amber22/dat/leap/cmd/leaprc.water.tip3p
+singleparticle = sequence{SER ILE ASN GLY LEU GLU PRO ALA ARG THR ILE CYS LEU GLU}
+savePdb singleparticle complex_nowat.pdb
+solvateOct singleparticle TIP3PBOX 18.0
+addions singleparticle Na+ 0
+addions singleparticle Cl- 0
+saveAmberParm singleparticle complex.parm7 complex.rst7
+savePdb singleparticle complex.pdb
+quit

@@ -1,0 +1,33 @@
+Relax MD
+ &cntrl
+  imin = 0,
+  irest = 1,
+  ntx = 5,
+  nstlim = 500000,
+  dt = 0.002,
+  cut = 9.0,
+  iwrap = 1,
+
+  ntr = 0,
+  restraint_wt = 0.0,
+
+  ntb = 2,
+  ntp = 1,
+  pres0 = 1.0,
+  taup = 2.0,
+  barostat = 2,
+
+  ntc = 2,
+  ntf = 2,
+
+  ntt = 3,
+  gamma_ln = 2.0,
+  tempi = 298.15,
+  temp0 = 298.15,
+  ig = -1,
+
+  ioutfm = 1,
+  ntpr = 2500,
+  ntwx = 2500,
+  ntwr = 2500,
+ /

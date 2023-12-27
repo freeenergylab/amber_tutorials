@@ -6,7 +6,7 @@ Relax MD
   nstlim = 500000,
   dt = 0.002,
   cut = 9.0,
-  iwrap = 1,
+  iwrap = 0,
 
   ntr = 0,
   restraint_wt = 0.0,

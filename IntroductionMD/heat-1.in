@@ -6,7 +6,7 @@ Heat MD
   nstlim = 10000,
   dt = 0.002,
   cut = 9.0,
-  iwrap = 1,
+  iwrap = 0,
 
   ntr = 1,
   restraint_wt = 5.0,

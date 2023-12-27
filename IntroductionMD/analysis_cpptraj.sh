@@ -55,8 +55,8 @@ $AMBERHOME/bin/cpptraj -p complex.parm7 << EOF
 trajin complex.rst7
 trajin prod.nc 1 last 1
 reference complex.rst7 [initial]
-rms ToInitial :1-14@CA ref [initial] mass
+rms ToInitial :1-14 ref [initial] mass
 strip :Na+
 strip :WAT
-trajout prod_solute_rms.crd
+trajout prod_solute_rms.pdb pdb
 EOF

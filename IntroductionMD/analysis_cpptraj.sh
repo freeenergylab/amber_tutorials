@@ -13,6 +13,12 @@ trajout min2_ascii.rst7
 EOF
 
 $AMBERHOME/bin/cpptraj -p complex.parm7 << EOF
+trajin heat-3.rst7
+autoimage
+trajout heat-3_ascii.rst7
+EOF
+
+$AMBERHOME/bin/cpptraj -p complex.parm7 << EOF
 trajin press-3.rst7
 autoimage
 trajout press-3_ascii.rst7

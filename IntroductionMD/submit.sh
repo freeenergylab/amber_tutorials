@@ -9,7 +9,7 @@ echo INFO: HOSTNAME `hostname`
 echo INFO: AMBERHOME $AMBERHOME
 
 nproc=16
-export CUDA_VISIBLE_DEVICES=0,1
+export CUDA_VISIBLE_DEVICES=0
 
 mpirun -np $nproc $AMBERHOME/bin/pmemd.MPI -O -i min1.in -p complex.parm7 -c complex.rst7 -ref complex.rst7 -o min1.out -r min1.rst7 -inf min1.info
 mpirun -np $nproc $AMBERHOME/bin/pmemd.MPI -O -i min2.in -p complex.parm7 -c min1.rst7 -ref min1.rst7 -o min2.out -r min2.rst7 -inf min2.info

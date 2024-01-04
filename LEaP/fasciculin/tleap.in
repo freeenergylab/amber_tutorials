@@ -1,0 +1,12 @@
+source leaprc.protein.ff14SB
+source leaprc.water.spce
+fasciculin = loadPdb 1fsc_amber.pdb
+bond fasciculin.3.SG fasciculin.22.SG
+bond fasciculin.17.SG fasciculin.39.SG
+bond fasciculin.41.SG fasciculin.52.SG
+bond fasciculin.53.SG fasciculin.59.SG
+solvateOct fasciculin SPCBOX 14.0
+addions fasciculin Cl- 0
+saveAmberParm fasciculin solvated_1fsc.parm7 solvated_1fsc.rst7
+savepdb fasciculin solvated_1fsc.pdb
+quit

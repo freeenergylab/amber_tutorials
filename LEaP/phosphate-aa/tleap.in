@@ -1,0 +1,6 @@
+source leaprc.protein.ff14SB
+source leaprc.phosaa14SB
+system = sequence{ACE TPO NME}
+saveAmberParm system complex.parm7 complex.rst7
+savePdb system complex.pdb
+quit

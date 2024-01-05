@@ -1,0 +1,7 @@
+source leaprc.protein.ff14SB
+loadAmberPrep cro.prepin
+loadAmberParams cro_2.frcmod
+loadAmberParams cro_1.frcmod
+system= loadPDB gfp.pdb
+saveAmberParm system gfp.parm7 gfp.rst7
+quit

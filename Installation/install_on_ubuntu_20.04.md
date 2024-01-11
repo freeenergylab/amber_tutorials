@@ -5,7 +5,7 @@ Copyright (C) 2023-2024 freeenergylab
   sudo apt -y install tcsh make cmake gcc gfortran flex bison patch bc wget xorg-dev libbz2-dev
   sudo apt -y install openmpi-bin libopenmpi-dev openssh-client
 ```
-or if your environment has:
+partially if your environment has:
 ```bash
   module purge
   module load gcc9/9.3.0
@@ -23,7 +23,7 @@ md5sum AmberTools23.tar.bz2
 
 073deadb3edfa96f86da91e3b070d2bc  AmberTools23.tar.bz2
 ```bash
-  cd /What/You/Want/To/Install/Directory
+  cd /Where/You/Want/To/Install/Directory
   tar xvf AmberTools23.tar.bz2
   tar xvf Amber22.tar.bz2
   cd amber22_src/build

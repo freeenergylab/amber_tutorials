@@ -46,7 +46,7 @@ cp ../1PY2_amber.pdb .
 python getSeq.py
 !cp 1PY2_amber.seq alignment.ali # modify this .ali file manually
 python addMissingResidues.py
-cd ../
+cd ..
 ```
 
 ## Considering protonated states using H++ server
@@ -61,3 +61,18 @@ ambpdb -p 0.15_80_10_pH7.0_1PY2_amber_fill.BL00010001.top -c 0.15_80_10_pH7.0_1P
 cd ../../
 ```
 
+## Using tleap to generate the topology and coordinate files for next simulations
+```bash
+mkdir -p tleap
+cd tleap
+tleap -s -f tleap.in
+# get the box volume info to calculate the ion concentration
+grep "Volume" leap.log
+# or
+cpptraj -i cpptraj.in
+source /data/users/lipengfei/software/miniconda/2022.02/bin/activate base
+python calculate_ion_conc.py --box_volume 345635.536 --ion_conc 150
+# get the number of Cl- ions to replace the numbers in tleap_ionconc.in file
+tleap -s -f tleap_ionconc.in
+cd ..
+```

@@ -20,3 +20,4 @@ $AMBERHOME/bin/pmemd.cuda -O -i press-2.in -p complex.parm7 -c heat-2.rst7 -ref 
 $AMBERHOME/bin/pmemd.cuda -O -i heat-3.in -p complex.parm7 -c press-2.rst7 -ref press-2.rst7 -o heat-3.out -r heat-3.rst7 -x heat-3.nc -inf heat-3.info
 $AMBERHOME/bin/pmemd.cuda -O -i press-3.in -p complex.parm7 -c heat-3.rst7 -ref heat-3.rst7 -o press-3.out -r press-3.rst7 -x press-3.nc -inf press-3.info
 $AMBERHOME/bin/pmemd.cuda -O -i prod.in -p complex.parm7 -c press-3.rst7 -ref press-3.rst7 -o prod.out -r prod.rst7 -x prod.nc -inf prod.info
+$AMBERHOME/bin/pmemd.cuda -O -i prod-2.in -p complex.parm7 -c prod.rst7 -ref prod.rst7 -o prod-2.out -r prod-2.rst7 -x prod-2.nc -inf prod-2.info

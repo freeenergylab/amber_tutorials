@@ -1,0 +1,14 @@
+Minimisation Stage 1
+ &cntrl
+  imin = 1,
+  ntmin = 1,
+  maxcyc = 10000,
+  ncyc = 5000,
+  dx0 = 0.01,
+  drms = 0.0001,
+
+  cut = 9.0,
+  ntr = 1,
+  restraint_wt = 5.0,
+  restraintmask = "!:WAT,Cl-,K+,Na+ & !@H=",
+ /

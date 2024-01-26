@@ -1,0 +1,15 @@
+source leaprc.protein.ff14SB
+source leaprc.water.tip3p
+source leaprc.gaff2
+loadAmberParams ../ligand/SP4206.frcmod
+Comp0 = loadMol2 ../ligand/SP4206.mol2
+Comp1 = loadPdb ../receptor/H++/1PY2_amber_fill_H++.pdb
+system = combine{Comp0 Comp1}
+bond Comp1.53.SG Comp1.100.SG
+solvateBox system TIP3PBOX 10.0
+addIons system Na+ 0
+addIons system Cl- 0
+addIonsRand system Na+ 32 Cl- 32
+saveAmberParm system complex.parm7 complex.rst7
+savePdb system complex.pdb
+quit

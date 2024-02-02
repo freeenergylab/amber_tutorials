@@ -6,7 +6,7 @@ loadAmberParams frcmod.ions234lm_126_tip3p
 loadOff DNA.OL15.lib
 source leaprc.DNA.OL15
 source leaprc.RNA.OL3
-DNAzyme = loadPdb 7pdu_cut_packmol_p4a.pdb
+DNAzyme = loadPdb ../DNAzyme/7pdu_cut_packmol_p4a.pdb
 addIonsRand DNAzyme Na+ 0
 addIonsRand DNAzyme Cl- 0
 setBox DNAzyme "vdw"

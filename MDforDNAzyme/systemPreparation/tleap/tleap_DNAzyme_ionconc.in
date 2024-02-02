@@ -9,6 +9,7 @@ source leaprc.RNA.OL3
 DNAzyme = loadPdb ../DNAzyme/7pdu_cut_packmol_p4a.pdb
 addIonsRand DNAzyme K+ 0
 addIonsRand DNAzyme Cl- 0
+addIonsRand DNAzyme K+ 174 Cl- 174
 setBox DNAzyme "vdw"
 saveamberparm DNAzyme complex.parm7 complex.rst7
 savepdb DNAzyme complex.pdb

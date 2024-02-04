@@ -1,0 +1,28 @@
+NVT MD w/o position restraints
+ &cntrl
+  imin   = 0,
+  irest  = 1, 
+  ntx    = 5,
+  nstlim = 50000000,
+  dt     = 0.002,
+  cut    = 9.0,
+  nscm   = 1000,
+
+  ntb    = 1,
+  ntp    = 0,
+
+  ntc    = 2,
+  ntf    = 2,
+  tol    = 0.000001,
+
+  ntt    = 1,
+  temp0  = 300.0,
+  tempi  = 300.0,
+  tautp  = 5.0,
+  ig     = -1,
+
+  ioutfm = 0,
+  ntpr   = 10000,
+  ntwx   = 10000,
+  ntwr   = 50000000,
+ /

@@ -1,4 +1,4 @@
-NVT MD with position restraints
+NVT MD w/o position restraints
  &cntrl
   imin   = 0,
   irest  = 1, 

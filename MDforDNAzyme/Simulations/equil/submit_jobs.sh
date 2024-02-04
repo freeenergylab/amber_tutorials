@@ -14,14 +14,14 @@ INPCRD=../../systemPreparation/tleap/complex.rst7
 
 OLD=$INPCRD
 NEW=min_ntr_h
-mpirun --oversubscribe -np $nproc $AMBERHOME/bin/pmemd.MPI -O -i ${NEW}.in -o $NEW.out -p $PRMTOP -c $OLD -r $NEW.rst7 -ref $OLD -info $NEW.info
+mpirun --oversubscribe -np $nproc $AMBERHOME/bin/pmemd.MPI -O -i ${NEW}.in -o $NEW.out -p $PRMTOP -c $OLD -r $NEW.rst7 -ref $OLD -inf $NEW.info
 
 OLD=$NEW.rst7
 NEW=min_ntr_l
-mpirun --oversubscribe -np $nproc $AMBERHOME/bin/pmemd.MPI -O -i ${NEW}.in -o $NEW.out -p $PRMTOP -c $OLD -r $NEW.rst7 -ref $OLD -info $NEW.info
+mpirun --oversubscribe -np $nproc $AMBERHOME/bin/pmemd.MPI -O -i ${NEW}.in -o $NEW.out -p $PRMTOP -c $OLD -r $NEW.rst7 -ref $OLD -inf $NEW.info
 
 OLD=$NEW.rst7
 NEW=min_ntr_n
-mpirun --oversubscribe -np $nproc $AMBERHOME/bin/pmemd.MPI -O -i ${NEW}.in -o $NEW.out -p $PRMTOP -c $OLD -r $NEW.rst7 -ref $OLD -info $NEW.info
+mpirun --oversubscribe -np $nproc $AMBERHOME/bin/pmemd.MPI -O -i ${NEW}.in -o $NEW.out -p $PRMTOP -c $OLD -r $NEW.rst7 -ref $OLD -inf $NEW.info
 
 source ./submit_gpu_jobs.sh

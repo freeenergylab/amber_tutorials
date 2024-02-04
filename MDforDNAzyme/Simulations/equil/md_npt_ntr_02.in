@@ -1,0 +1,36 @@
+NPT MD with position restraints
+ &cntrl
+  imin   = 0,
+  irest  = 1,
+  ntx    = 5,
+  nstlim = 125000,
+  dt     = 0.002,
+  cut    = 9.0,
+  nscm   = 1000,
+
+  ntb    = 2,
+  ntp    = 1,
+  pres0  = 1.0,
+  taup   = 1.0,
+
+  ntc    = 2,
+  ntf    = 2,
+
+  ntt    = 1,
+  temp0  = 300.0,
+  tempi  = 300.0,   
+  tautp  = 0.5,
+  ig     = -1,
+
+  ioutfm = 0,
+  ntpr   = 2500,
+  ntwx   = 0,
+  ntwr   = 2500,
+  
+  ntr    = 1,
+ /
+Hold the nucleic acids fixed
+10.0
+RES 1 52
+END
+END

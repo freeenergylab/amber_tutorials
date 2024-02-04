@@ -1,0 +1,10 @@
+Minimisation Stage 3 w/o position restraints
+ &cntrl
+  imin   = 1,
+  ntmin  = 1,
+  maxcyc = 5000,
+  ncyc   = 2500,
+  dx0    = 0.1,
+
+  cut    = 9.0,
+ /

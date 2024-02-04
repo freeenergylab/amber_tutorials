@@ -1,0 +1,16 @@
+Minimisation Stage 1 with position restraints
+ &cntrl
+  imin   = 1,
+  ntmin  = 1,
+  maxcyc = 2500,
+  ncyc   = 1250,
+  dx0    = 0.1,
+
+  cut    = 9.0,
+  ntr    = 1,
+ /
+Hold the nucleic acids fixed
+25.0
+RES 1 52
+END
+END

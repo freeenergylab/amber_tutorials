@@ -48,3 +48,6 @@ $AMBERHOME/bin/pmemd.cuda -O -i ${NEW}.in -o $NEW.out -p $PRMTOP -c $OLD -r $NEW
 OLD=$NEW.rst7
 NEW=md_nvt_red_06
 $AMBERHOME/bin/pmemd.cuda -O -i ${NEW}.in -o $NEW.out -p $PRMTOP -c $OLD -r $NEW.rst7 -ref $OLD -x $NEW.nc -inf $NEW.info
+
+cd ../prod
+source submit_gpu_jobs.sh

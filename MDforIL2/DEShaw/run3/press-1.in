@@ -1,0 +1,33 @@
+Press MD
+ &cntrl
+  imin = 0,
+  irest = 1,
+  ntx = 5,
+  nstlim = 50000,
+  dt = 0.002,
+  cut = 9.0,
+  iwrap = 0,
+
+  ntr = 1,
+  restraint_wt = 5.0,
+  restraintmask = "!:WAT,Cl-,K+,Na+ & !@H=",
+
+  ntb = 2,
+  ntp = 1,
+  pres0 = 1.0,
+  taup = 2.0,
+  barostat = 2,
+
+  ntc = 2,
+  ntf = 2,
+
+  ntt = 3,
+  gamma_ln = 2.0,
+  temp0 = 100.0,
+  ig = -1,
+
+  ioutfm = 0,
+  ntpr = 2500,
+  ntwx = 0,
+  ntwr = 2500,
+ /

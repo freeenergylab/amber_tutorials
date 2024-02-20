@@ -1,0 +1,13 @@
+Minimisation Stage 2
+ &cntrl
+  imin = 1,
+  ntmin = 1,
+  maxcyc = 10000,
+  ncyc = 5000,
+  dx0 = 0.01,
+  drms = 0.0001,
+
+  cut = 9.0,
+  ntr = 0,
+  restraint_wt = 0.0,
+ /

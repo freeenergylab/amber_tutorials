@@ -15,6 +15,8 @@ trajin ../prod/md_nvt_prod-5.nc 10 last 10
 trajin ../prod/md_nvt_prod-6.nc 10 last 10
 trajin ../prod/md_nvt_prod-7.nc 10 last 10
 trajin ../prod/md_nvt_prod-8.nc 10 last 10
+trajin ../prod/md_nvt_prod-9.nc 10 last 10
+trajin ../prod/md_nvt_prod-10.nc 10 last 10
 reference ../../systemPreparation/tleap/complex.rst7 [initial]
 autoimage
 rms ToInitial :1-52 ref [initial] mass

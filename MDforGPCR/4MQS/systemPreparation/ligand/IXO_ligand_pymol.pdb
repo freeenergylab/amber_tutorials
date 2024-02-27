@@ -1,0 +1,63 @@
+HETATM    1  C01 IXO A 501       2.191   0.992   4.701  1.00 73.16      A2   C  
+HETATM    2  N02 IXO A 501       0.744   0.830   4.710  1.00 92.71      A2   N1+
+HETATM    3  C03 IXO A 501       0.244   1.211   6.002  1.00 79.71      A2   C  
+HETATM    4  C04 IXO A 501       0.354  -0.613   4.423  1.00101.98      A2   C  
+HETATM    5  C05 IXO A 501       0.189   1.656   3.679  1.00109.05      A2   C  
+HETATM    6  C06 IXO A 501      -1.274   1.535   3.403  1.00103.06      A2   C  
+HETATM    7  C07 IXO A 501      -2.530   1.478   3.156  1.00 90.16      A2   C  
+HETATM    8  C08 IXO A 501      -4.074   1.445   2.976  1.00100.71      A2   C  
+HETATM    9  O09 IXO A 501      -4.585   0.758   1.821  1.00120.49      A2   O  
+HETATM   10  C10 IXO A 501      -4.111  -0.480   1.487  1.00123.73      A2   C  
+HETATM   11  N11 IXO A 501      -3.519  -1.381   2.391  1.00125.81      A2   N  
+HETATM   12  O12 IXO A 501      -3.182  -2.509   1.696  1.00136.60      A2   O  
+HETATM   13  C13 IXO A 501      -3.816  -2.435   0.414  1.00114.35      A2   C  
+HETATM   14  C14 IXO A 501      -4.153  -1.040   0.209  1.00105.32      A2   C  
+HETATM   15  H01 IXO A 501       2.653   0.100   4.277  1.00 73.16      A2   H  
+HETATM   16  H02 IXO A 501       2.456   1.860   4.097  1.00 73.16      A2   H  
+HETATM   17  H03 IXO A 501       2.547   1.136   5.721  1.00 73.16      A2   H  
+HETATM   18  H04 IXO A 501      -0.779   0.852   6.115  1.00 79.71      A2   H  
+HETATM   19  H05 IXO A 501       0.870   0.772   6.779  1.00 79.71      A2   H  
+HETATM   20  H06 IXO A 501       0.260   2.297   6.092  1.00 79.71      A2   H  
+HETATM   21  H07 IXO A 501      -0.581  -0.632   3.862  1.00101.98      A2   H  
+HETATM   22  H08 IXO A 501       1.138  -1.092   3.837  1.00101.98      A2   H  
+HETATM   23  H09 IXO A 501       0.224  -1.149   5.363  1.00101.98      A2   H  
+HETATM   24  H10 IXO A 501       0.671   1.313   2.763  1.00109.05      A2   H  
+HETATM   25  H11 IXO A 501       0.385   2.693   3.952  1.00109.05      A2   H  
+HETATM   26  H12 IXO A 501      -4.703  -3.068   0.373  1.00114.35      A2   H  
+HETATM   27  H13 IXO A 501      -3.136  -2.779  -0.365  1.00114.35      A2   H  
+HETATM   28  H14 IXO A 501      -3.471  -0.546  -0.483  1.00105.32      A2   H  
+HETATM   29  H15 IXO A 501      -5.149  -0.943  -0.223  1.00105.32      A2   H  
+HETATM   30  H16 IXO A 501      -4.363   2.486   2.835  1.00100.71      A2   H  
+HETATM   31  H17 IXO A 501      -4.498   0.965   3.858  1.00100.71      A2   H  
+CONECT    1    2   15   16   17
+CONECT    2    1    3    4    5
+CONECT    3    2   18   19   20
+CONECT    4    2   21   22   23
+CONECT    5    2    6   24   25
+CONECT    6    5    7
+CONECT    7    6    8
+CONECT    8    7    9   30   31
+CONECT    9    8   10
+CONECT   10    9   11   14
+CONECT   11   10   12
+CONECT   12   11   13
+CONECT   13   12   14   26   27
+CONECT   14   10   13   28   29
+CONECT   15    1
+CONECT   16    1
+CONECT   17    1
+CONECT   18    3
+CONECT   19    3
+CONECT   20    3
+CONECT   21    4
+CONECT   22    4
+CONECT   23    4
+CONECT   24    5
+CONECT   25    5
+CONECT   26   13
+CONECT   27   13
+CONECT   28   14
+CONECT   29   14
+CONECT   30    8
+CONECT   31    8
+END

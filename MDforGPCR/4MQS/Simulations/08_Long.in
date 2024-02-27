@@ -1,0 +1,11 @@
+500ns NPT production with HMR
+ &cntrl
+   imin=0, ntx=5, irest=1,
+   ntc=2, ntf=2, tol=0.0000001,
+   nstlim=125000000, ntt=3, gamma_ln=2.0,
+   temp0=300.0,
+   ntpr=5000, ntwr=5000, ntwx=5000,
+   dt=0.004, ig=-1,
+   ntb=2, cut=10.0, ioutfm=1, ntxo=2,
+   ntp=3, csurften=3, gamma_ten=0.0, ninterface=2,
+ /

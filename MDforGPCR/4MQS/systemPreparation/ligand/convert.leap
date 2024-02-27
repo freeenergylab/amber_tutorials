@@ -1,0 +1,5 @@
+source leaprc.gaff2
+loadamberparams IXO_ligand.frcmod
+MOL = loadmol2 IXO_ligand.mol2
+saveoff MOL IXO_ligand.off
+quit

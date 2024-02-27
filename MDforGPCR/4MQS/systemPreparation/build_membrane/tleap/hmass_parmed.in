@@ -1,0 +1,4 @@
+parm complex.parm7
+HMassRepartition 
+outparm complex_hmass.parm7
+quit

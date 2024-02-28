@@ -6,6 +6,8 @@ loadamberparams frcmod.ionsjc_tip3p
 loadamberparams ../../ligand/IXO_ligand.frcmod
 loadoff ../../ligand/IXO_ligand.off
 system = loadpdb ../bilayer_complex_solute.pdb
+bond system.79.SG system.159.SG
+bond system.235.SG system.238.SG
 set system box {83.793 83.793 91.679}
 saveamberparm system complex.parm7 complex.rst7
 savepdb system complex.pdb

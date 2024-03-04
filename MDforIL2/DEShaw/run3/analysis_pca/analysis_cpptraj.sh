@@ -38,14 +38,14 @@ EOF
 
 $AMBERHOME/bin/cpptraj -p ../complex.parm7 << EOF
 parmstrip !(:2-128@CA)
-parmwrite out complex_pca_modes.prmtop 
+parmwrite out complex_pca_modes.parm7 
 go
 exit
 EOF
 
 $AMBERHOME/bin/cpptraj -p ../complex.parm7 << EOF
 readdata eigen_results.dat name MyEvecs
-runanalysis modes name MyEvecs trajout projection_mode1.pdb pcmin -100 pcmax 100 tmode 1 trajoutmask :2-128@CA trajoutfmt pdb
-runanalysis modes name MyEvecs trajout projection_mode2.pdb pcmin -100 pcmax 100 tmode 2 trajoutmask :2-128@CA trajoutfmt pdb
-runanalysis modes name MyEvecs trajout projection_mode3.pdb pcmin -100 pcmax 100 tmode 3 trajoutmask :2-128@CA trajoutfmt pdb
+runanalysis modes name MyEvecs trajout projection_mode1.pdb pcmin -20 pcmax 20 tmode 1 trajoutmask :2-128@CA trajoutfmt pdb
+runanalysis modes name MyEvecs trajout projection_mode2.pdb pcmin -20 pcmax 20 tmode 2 trajoutmask :2-128@CA trajoutfmt pdb
+runanalysis modes name MyEvecs trajout projection_mode3.pdb pcmin -20 pcmax 20 tmode 3 trajoutmask :2-128@CA trajoutfmt pdb
 EOF

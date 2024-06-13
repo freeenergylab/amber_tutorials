@@ -1,0 +1,8 @@
+source leaprc.gaff2
+loadamberprep pet.prepi
+loadamberprep hpt.prepi
+loadamberprep tpt.prepi
+mol = sequence {HPT PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET TPT}
+savepdb mol pet20.pdb
+saveamberparm mol pet20.parm7 pet20.rst7
+quit

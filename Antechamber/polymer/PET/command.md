@@ -10,7 +10,7 @@ mv mol_1_1.mol2 pet_monomer.mol2
 ```bash
 module load amber/amber24_ambertools24
 module load gaussian/g16
-antechamber -fi mol2 -fo gcrt -i pet_monomer.mol2 -o pet.gjf -pf y
+antechamber -fi mol2 -fo gcrt -i pet_monomer.mol2 -o pet.gjf -at gaff2 -pf y
 # modify the pet.gjf file:
 # --Link1--
 #%nproc=32
@@ -20,7 +20,8 @@ antechamber -fi mol2 -fo gcrt -i pet_monomer.mol2 -o pet.gjf -pf y
 
 g16 < pet.gjf > pet.log
 rm Gau-*
-antechamber -fi gout -fo ac -i pet.log -o pet.ac -c resp -pf y
+antechamber -fi gout -fo ac -i pet.log -o pet.ac -c resp -at gaff2 -pf y
+antechamber -fi gout -fo mol2 -i pet.log -o pet.mol2 -c resp -at gaff2 -pf y
 ```
 
 ## Build the prepi files for the normal, N-terminal, and C-terminal PET monomers

@@ -29,14 +29,17 @@ antechamber -fi gout -fo mol2 -i pet.log -o pet.mol2 -c resp -at gaff2 -pf y
 wget https://ambermd.org/tutorials/advanced/tutorial27/files/mainchain.pet
 mv mainchain.pet pet.mc
 prepgen -i pet.ac -o pet.prepi -f prepi -m pet.mc -rn PET -rf pet.res
+parmchk2 -i pet.prepi -f prepi -o pet.frcmod -a Y -p $AMBERHOME/dat/leap/parm/gaff2.dat
 
 wget https://ambermd.org/tutorials/advanced/tutorial27/files/mainchain.hpt
 mv mainchain.hpt hpt.mc
 prepgen -i pet.ac -o hpt.prepi -f prepi -m hpt.mc -rn HPT -rf hpt.res
+parmchk2 -i hpt.prepi -f prepi -o hpt.frcmod -a Y -p $AMBERHOME/dat/leap/parm/gaff2.dat
 
 wget https://ambermd.org/tutorials/advanced/tutorial27/files/mainchain.tpt
 mv mainchain.tpt tpt.mc
 prepgen -i pet.ac -o tpt.prepi -f prepi -m tpt.mc -rn TPT -rf tpt.res
+parmchk2 -i tpt.prepi -f prepi -o tpt.frcmod -a Y -p $AMBERHOME/dat/leap/parm/gaff2.dat
 ```
 
 ## Generate a polymer system

@@ -1,4 +1,7 @@
 source leaprc.gaff2
+loadamberparams pet.frcmod
+loadamberparams hpt.frcmod
+loadamberparams tpt.frcmod
 loadamberprep pet.prepi
 loadamberprep hpt.prepi
 loadamberprep tpt.prepi
